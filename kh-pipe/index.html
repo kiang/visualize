@@ -5,11 +5,11 @@
     <title>高雄地下管線圖</title>
     <!-- libraries-->
     <meta property="og:locale" content="zh_TW">
-    <meta property="og:image" content="http://zbryikt.github.io/visualize/kh-pipe/thumbnail.png">
+    <meta property="og:image" content="http://kiang.github.io/visualize/kh-pipe/thumbnail.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="410">
     <meta property="og:image:height" content="410">
-    <meta property="og:url" content="http://zbryikt.github.io/visualize/kh-pipe/">
+    <meta property="og:url" content="http://kiang.github.io/visualize/kh-pipe/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="高雄地下管線地圖">
     <meta property="og:description" content="高雄地下管線圖，將 https://github.com/mutolisp/kh_pplines 的資料套疊到 Google Maps 上">
@@ -26,9 +26,13 @@
   <body ng-app ng-controller="main">
     <div id="content">
       <div id="heading">
-        <h2>高雄地下管線圖</h2>
-        <div style="position:absolute;top:20px;right:20px;" data-href="http://zbryikt.github.io/visualize/kh-pipe/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" class="fb-like"></div>
-        <div class="desc">資料來源: <a href="https://github.com/mutolisp/kh_pplines">https://github.com/mutolisp/kh_pplines</a> /  <a href="https://www.facebook.com/billypan102/photos/a.431566178638.206452.116441588638/10152225816643639/?type=1">Facebook Post of BillyPan</a><br>管線資料包含中石化、中油、福聚、欣高等石油、天然氣等等管線。詳情請參考上列網址<br>資料非直接官方釋出或有誤差，管線與氣爆事件也可能並非直接相關，因此此地圖僅供參考。</div>
+        <h2>高雄地下石油管線圖</h2>
+        <div style="position:absolute;top:20px;right:20px;" data-href="http://kiang.github.io/visualize/kh-pipe/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" class="fb-like"></div>
+        <div class="desc">
+            資料來源: <a href="https://github.com/mutolisp/kh_pplines">https://github.com/mutolisp/kh_pplines</a> /  <a href="https://www.facebook.com/billypan102/photos/a.431566178638.206452.116441588638/10152225816643639/?type=1">Facebook Post of BillyPan</a>
+            <br />本頁原始版本： <a href="http://zbryikt.github.io/visualize/kh-pipe/">http://zbryikt.github.io/visualize/kh-pipe/</a>
+            <br />管線資料包含中石化、中油、福聚等石油管線。詳情請參考上列網址
+            <br />資料非直接官方釋出或有誤差，管線與氣爆事件也可能並非直接相關，因此此地圖僅供參考。</div>
       </div>
       <div id="mainmap"></div>
       <svg id="svg" width="100%" height="500px" viewbox="0 0 800 500" preserveAspectRatio="xMidYMid"></svg>

@@ -53,14 +53,14 @@ main = function($scope){
       });
       this.info.prj = d3.geo.mercator().center([120.3202, 22.7199]).scale(335000);
       this.info.path = d3.geo.path().projection(this.info.prj);
-      return d3.json('kh_pipelines.geojson', function(json){
+      return d3.json('kh_oil_pipelines.geojson', function(json){
         var x$, y$;
         x$ = this$.svg.selectAll('path').data(json.features);
         y$ = x$.enter().append('path');
         y$.attr({
           d: this$.info.path,
-          stroke: 'rgba(255,0,0,0.7)',
-          "stroke-width": 2,
+          stroke: 'rgba(255,0,255,0.7)',
+          "stroke-width": 4,
           "stroke-linejoin": 'round',
           fill: 'none'
         });
